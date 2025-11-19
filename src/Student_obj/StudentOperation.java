@@ -1,10 +1,12 @@
 package Student_obj;
 
+import java.util.ArrayList;
+
 public interface StudentOperation {
 	
-	public Student findStudent(int id);
+	public Student findStudent(int id,ArrayList<Student> studlist);
 	
-	public void addStudent(Student s);
+	public void addStudent(Student s,ArrayList<Student> studlist);
 	
 	public void deleteStudent(int id);
 	
