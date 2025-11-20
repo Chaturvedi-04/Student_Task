@@ -34,10 +34,6 @@ public class StudentImplementation implements StudentOperation{
 		return ;
 	}
 
-	
-
-	
-
 	@Override
 	public void displayStudent(ArrayList<Student> studlist) {
 		if(studlist!=null) {
@@ -45,9 +41,6 @@ public class StudentImplementation implements StudentOperation{
 				System.out.println(s);
 			}
 		}
-		
-		
-		
 		
 	}
 
