@@ -30,28 +30,34 @@ public class StudentImplementation implements StudentOperation{
 			{
 				studlist.remove(s);
 			}
-		System.out.println("deleted successfully");
+		System.out.println("Deleted successfully");
 		return ;
 	}
 
 	
 
-	private void remove(Student s) {
-		// TODO Auto-generated method stub
+	
+
+	@Override
+	public void displayStudent(ArrayList<Student> studlist) {
+		if(studlist!=null) {
+			for(Student s:studlist) {
+				System.out.println(s);
+			}
+		}
+		
+		
+		
 		
 	}
 
 	@Override
-	public void displayStudent(Student s) {
-		
-		
-	}
-
-	@Override
-	public void updateName(int id) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void updateName(int id,ArrayList<Student>studlist,String un) {
+		Student s= findStudent(id,studlist);
+		if(s!=null) {
+			s.setSname(un);
+			}
+		}
 
 	@Override
 	public int countStudents(ArrayList<Student> studlist) {

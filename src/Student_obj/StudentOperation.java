@@ -10,9 +10,9 @@ public interface StudentOperation {
 	
 	public void deleteStudent(int id,ArrayList<Student> studlist);
 	
-	public void displayStudent(Student s);
+	public void displayStudent(ArrayList<Student> studlist);
 	
-	public void updateName(int id);
+	public void updateName(int id,ArrayList<Student>studlist,String un);
 	
 	public int countStudents(ArrayList<Student> studlist);
 
