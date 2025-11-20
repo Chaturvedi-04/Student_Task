@@ -24,14 +24,26 @@ public class StudentImplementation implements StudentOperation{
 	}
 
 	@Override
-	public void deleteStudent(int id) {
+	public void deleteStudent(int id,ArrayList<Student>studlist) {
+		Student s=findStudent(id,studlist);
+		if(s!=null)
+			{
+				studlist.remove(s);
+			}
+		System.out.println("deleted successfully");
+		return ;
+	}
+
+	
+
+	private void remove(Student s) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void displayStudent(Student s) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
@@ -42,9 +54,8 @@ public class StudentImplementation implements StudentOperation{
 	}
 
 	@Override
-	public int countStudents(Student s) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int countStudents(ArrayList<Student> studlist) {
+		return studlist.size();
 	}
 
 }

@@ -24,6 +24,15 @@ public class Test {
 		//finding students with id 101 & 201
 		System.out.println(si.findStudent(101,studlist));
 		System.out.println(si.findStudent(201,studlist));
+		
+		//deleting the student with id
+		si.deleteStudent(103,studlist);
+		System.out.println(studlist);
+		
+		//counting the number if students
+		System.out.println("Number of students present: "+ si.countStudents(studlist));
 	}
+
+
 
 }

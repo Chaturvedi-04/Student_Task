@@ -8,12 +8,12 @@ public interface StudentOperation {
 	
 	public void addStudent(Student s,ArrayList<Student> studlist);
 	
-	public void deleteStudent(int id);
+	public void deleteStudent(int id,ArrayList<Student> studlist);
 	
 	public void displayStudent(Student s);
 	
 	public void updateName(int id);
 	
-	public int countStudents(Student s);
+	public int countStudents(ArrayList<Student> studlist);
 
 }
