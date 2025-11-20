@@ -19,9 +19,11 @@ public class Test {
 		si.addStudent(s3,studlist);
 		
 		//printing list after adding students
+		System.out.println("Added Students:");
 		System.out.println(studlist);
 		
 		//finding students with id 101 & 201
+		System.out.println("Finding Students:");
 		System.out.println(si.findStudent(101,studlist));
 		System.out.println(si.findStudent(201,studlist));
 		
@@ -31,6 +33,16 @@ public class Test {
 		
 		//counting the number if students
 		System.out.println("Number of students present: "+ si.countStudents(studlist));
+		
+		//Updating Name
+		si.updateName(101, studlist, "Mahesh");
+		System.out.println("Student Name Updated");
+		System.out.println(studlist);
+		
+		//Displaying Student List
+		System.out.println("Displaying StudentList:");
+		si.displayStudent(studlist);
+		
 	}
 
 
